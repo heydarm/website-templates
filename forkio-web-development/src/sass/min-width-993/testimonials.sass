@@ -1,0 +1,47 @@
+@media (min-width: 993px)
+
+    .testimonials
+        display: grid
+        grid-template-areas: 'h h h' 'item item item' 'item item item' 'desc desc desc' 'line line line'
+        grid-template-columns: 1fr 1fr 1fr
+        column-gap: 117px
+        background-position: center 0
+        padding: 0 96px
+
+        &::after
+            grid-area: line
+            width: 780px
+            margin: 0 auto
+            margin-top: 16px
+            margin-bottom: 20px
+            align-self: center
+
+    .testimonials__item
+        justify-self: center
+
+    .testimonials__h
+        grid-area: h
+        margin: 75px 0 93px 0
+        font-size: 42px
+
+    .testimonials__logo-smashing
+        margin: 0 0 37px 0
+
+    .testimonials__logo-codrops
+        margin: 0 0 33px 0
+
+    .testimonials__logo-w
+        margin: 0 0 26px 0
+
+    .testimonials__logo-pb
+        margin: 112px 0 37px 0
+
+    .testimonials__logo-cb
+        margin: 108px 0 32px 0
+
+    .testimonials__logo-tnw
+        margin: 107px 0 32px 0
+
+    .testimonials__desc
+        grid-area: desc
+        display: flex

@@ -1,0 +1,26 @@
+@media (min-width: 993px)
+
+    .header
+        display: grid
+        grid-template-areas: 'logo nav btn'
+        grid-template-columns: 2fr 6fr 1fr
+        grid-column-gap: 47px
+        height: 100px
+        padding: 0
+        padding-left: calc(100vw / 13.3)
+        padding-right: calc(100vw / 13.3)
+
+    .header__button
+        justify-self: right
+        grid-area: btn
+
+    // header__nav
+
+    .header__nav
+        grid-area: nav
+        text-align: right
+        margin: 0
+        justify-content: flex-end
+
+    .header__nav-item
+        text-align: center

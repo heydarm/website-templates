@@ -1,0 +1,35 @@
+@media (min-width: 993px)
+
+    // description
+
+    .description
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-column-gap: 90px
+        overflow: hidden
+        margin-top: 70px
+        padding: 80px 90px 70px 90px
+        text-align: left
+        overflow: hidden
+        position: relative
+
+    .description__h
+        display: none
+
+    .description__item
+        display: grid
+        grid-template-areas: 'icon h' 'icon p'
+        margin-top: 60px
+
+    // description__editor-img
+
+    .description__editor-h
+        display: flex
+
+    .description__editor-img
+        width: 50vw
+        position: absolute
+        bottom: 0
+
+        &:hover
+            background-image: url('../img/editor-hover@2X.png')
