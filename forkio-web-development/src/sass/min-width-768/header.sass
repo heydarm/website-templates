@@ -1,0 +1,54 @@
+@media (min-width: 768px)
+
+    .header
+        height: 118px
+        padding: 10px 20px
+        display: grid
+        grid-template-areas: 'logo btn' 'nav nav'
+
+    .header__logo-wrapper
+        grid-area: logo
+
+    .header__logo-name
+        display: flex
+
+    .header__button
+        grid-area: btn
+        width: 145px
+        height: 38px
+        font-size: 16px
+        justify-self: right
+
+    .header__burger
+        display: none
+
+    // header__nav
+
+    .header__nav
+        grid-area: nav
+        width: auto
+        height: auto
+        display: flex
+        flex-direction: row
+        overflow: hidden
+        position: relative
+        top: auto
+        margin: 0 auto
+        background-color: transparent
+
+    .header__nav-item
+        height: auto
+        padding-left: 0
+        color: #8D81AC
+        font-size: 16px
+        border-bottom: 0
+        font-weight: bold
+
+        &:not(:first-child)
+            margin-left: 48px
+
+        &:hover
+            color: white
+
+            &::before
+                display: none

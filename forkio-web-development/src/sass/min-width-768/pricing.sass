@@ -1,0 +1,35 @@
+@media (min-width: 768px)
+
+    .pricing
+        display: grid
+        grid-template-areas: 'h h' 'item item' 'item item'
+        grid-template-columns: 1fr 1fr
+        grid-column-gap: 16px
+        grid-row-gap: 42px
+        padding: 0 88px 82px 88px
+        position: relative
+        background-color: transparent
+        background-image: url('../img/price-bg(768).png')
+        background-position: center -100px
+        background-repeat: no-repeat
+        background-color: #4B3B4E
+
+    .pricing__h
+        grid-area: h
+        margin: 80px 0 0 0
+        font-size: 42px
+        text-align: center
+
+    .pricing__item
+        height: 460px
+        align-self: center
+        justify-self: center
+
+    .pricing__content-p
+        margin-top: 16px
+
+    // Highlighted
+
+    .pricing__item_highlighted
+        width: 290px
+        height: 560px
